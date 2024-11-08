@@ -15,8 +15,8 @@ It has three main models: Building, Elevator, Request
 
 The **Building** class has below properties:
 
-- Floors: the number of floors in the building
-- Elevators: list of elevators with its properties
+- Floors: the number of floors in the building, its value is picked from appsettings.json `Building:Floors`
+- Elevators: list of elevators with its properties, its value is picked from appsettings.json `Building:Elevators`
 - Requests: list of requests with its properties
 
 The **Elevator** class has below properties:
@@ -32,7 +32,7 @@ The **Request** class has below properties:
 - Direction: the direction of the request- Up/Down
 
 
-The application flow is controlled by two services: BuidlingService and ElevatorService.
+The application flow is controlled by two services: BuildingService and ElevatorService.
 
 The **BuildingService** starts simulation and runs two tasks: GenerateRandomRequests and ProcessRequests.
 

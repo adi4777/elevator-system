@@ -16,7 +16,7 @@ namespace ElevatorControlSystem.Core.Services
             }
         }
 
-        public void StartSimulation()
+        public void StartSimulation(int displayStatusDelay)
         {
             Console.WriteLine(
                 $"**Starting simulation with {_building.Floors} floors and {_building.Elevators.Count} elevators**"
@@ -27,7 +27,7 @@ namespace ElevatorControlSystem.Core.Services
             while (true)
             {
                 DisplayStatus();
-                Thread.Sleep(10000); // Display status after sepcific delay
+                Thread.Sleep(displayStatusDelay); // Display status after specific delay
             }
         }
 
