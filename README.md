@@ -45,3 +45,5 @@ The **ElevatorService** controls each elevator by operating it continuosly, addi
 - MoveToFloor: this method moves the elevator to the requested floor.
 - Operate: this method operates the elevator and updates its status based on the stops & current floor.
 
+## App Screenshot
+![app-running](https://github.com/user-attachments/assets/6fa12ddd-93bb-4108-a026-2d6e78c28130)
