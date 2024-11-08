@@ -87,7 +87,7 @@ namespace ElevatorControlSystem.Core.Services
             Console.WriteLine("\n");
         }
 
-        private Elevator FindClosestElevator(Request request)
+        public Elevator FindClosestElevator(Request request)
         {
             Elevator? closestElevator = null;
             int minDistance = _building.Floors + 1;
